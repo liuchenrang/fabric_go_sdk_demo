@@ -1,0 +1,59 @@
+{
+	"url": "https://admin:adminpw@localhost:7054",
+	"mspdir": null,
+	"tls": {
+		"certfiles": null,
+		"client": {
+			"certfile": null,
+			"keyfile": null
+		}
+	},
+	"csr": {
+		"cn": "admin",
+		"serialnumber": null,
+		"names": [
+			{
+				"C": "US",
+				"ST": "North Carolina",
+				"L": null,
+				"O": "Hyperledger",
+				"OU": "Fabric"
+			}
+		],
+		"hosts": [
+			"xinghuodeMacBook-Pro.local"
+		],
+		"ca": {
+			"pathlen": null,
+			"pathlenzero": null,
+			"expiry": null
+		}
+	},
+	"id": {
+		"name": null,
+		"type": null,
+		"affiliation": null,
+		"maxenrollments": -1,
+		"attributes": [
+			{
+				"name": null,
+				"value": null
+			}
+		]
+	},
+	"enrollment": {
+		"profile": null,
+		"label": null
+	},
+	"caname": null,
+	"bccsp": {
+		"default": "SW",
+		"sw": {
+			"hash": "SHA2",
+			"security": 256,
+			"filekeystore": {
+				"keystore": "msp/keystore"
+			}
+		}
+	}
+}
