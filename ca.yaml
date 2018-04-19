@@ -235,17 +235,15 @@ entityMatchers:
 
 certificateAuthorities:
   ca-org1:
-    url: https://127.0.0.1:7054
+    url: https://ca.org1.example.com:7054
     tlsCACerts:
       # Comma-Separated list of paths
-      path: /Users/XingHuo/IdeaProjects/fabric-mac/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
-      #path: ${GOPATH}/src/github.com/hyperledger/fabric-sdk-go/test/fixtures/fabricca/tls/certs/ca_root.pem
-      # Client key and cert for SSL handshake with Fabric CA
+      path: /Users/XingHuo/IdeaProjects/fabric-mac/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem
       client:
         key:
-          path: /Users/XingHuo/IdeaProjects/fabric-mac/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
+          path: /Users/XingHuo/IdeaProjects/fabric-mac/crypto-config/peerOrganizations/org1.example.com/ca/3499aeea3b2332b2bcfd688dd119456937dc892c8002aed6a2d103d7a09807b2_sk
         cert:
-          path: /Users/XingHuo/IdeaProjects/fabric-mac/crypto-config/peerOrganizations/org1.example.com/msp/tlscacerts/tlsca.org1.example.com-cert.pem
+          path: /Users/XingHuo/IdeaProjects/fabric-mac/crypto-config/peerOrganizations/org1.example.com/ca/ca.org1.example.com-cert.pem
 #          path: ${GOPATH}/src/github.com/hyperledger/fabric-sdk-go/test/fixtures/fabricca/tls/certs/client/client_fabric_client.pem
 
     # Fabric-CA supports dynamic user enrollment via REST APIs. A "root" user, a.k.a registrar, is
@@ -254,7 +252,7 @@ certificateAuthorities:
       enrollId: admin
       enrollSecret: adminpw
     # [Optional] The optional name of the CA.
-    caName: ca-org1
+    caName: ca.org1.example.com
 
 certificateAuthority:
     - pattern: (\w+)-org1
